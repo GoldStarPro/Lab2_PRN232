@@ -8,7 +8,7 @@ using DataAccessObjects;
 
 namespace Repositories
 {
-    internal class SystemAccountRepository : ISystemAccountRepository
+    public class SystemAccountRepository : ISystemAccountRepository
     {
         public async Task<SystemAccount> Login(string email, string password)
         {

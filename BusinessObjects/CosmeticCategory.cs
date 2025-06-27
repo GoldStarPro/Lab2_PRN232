@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessObjects;
 
 public partial class CosmeticCategory
 {
+    [Key]
     public string CategoryId { get; set; } = null!;
 
     public string CategoryName { get; set; } = null!;
